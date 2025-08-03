@@ -251,6 +251,21 @@
   <script defer src="/assets/js/common.js"></script>
   <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
 
+  <!-- Custom script to redirect publications link to Google Scholar -->
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    // Find all links to /publications/
+    var pubLinks = document.querySelectorAll('a[href*="/publications/"]');
+    
+    pubLinks.forEach(function(link) {
+      // Change the href to Google Scholar
+      link.href = 'https://scholar.google.com/citations?user=7g5CR0oAAAAJ&hl=en';
+      // Make it open in a new tab
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+    });
+  });
+  </script>
     
   <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
   <script async src="https://badge.dimensions.ai/badge.js"></script>
