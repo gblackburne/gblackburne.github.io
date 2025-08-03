@@ -481,6 +481,9 @@ footer.sticky-bottom {
 .projects .card img {
   width: 100%;
 }
+.projects .card .card-body {
+  padding: 0.75rem;
+}
 .projects .card-item {
   width: auto;
   margin-bottom: 10px;
@@ -491,7 +494,7 @@ footer.sticky-bottom {
 }
 .projects .grid-sizer,
 .projects .grid-item {
-  width: 230px;
+  width: 240px;
   margin-bottom: 10px;
 }
 .projects h2.category {
