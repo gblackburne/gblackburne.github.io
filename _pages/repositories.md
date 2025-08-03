@@ -7,8 +7,6 @@ nav: true
 nav_order: 3
 ---
 
-## GitHub users
-
 {% if site.data.repositories.github_users %}
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for user in site.data.repositories.github_users %}
@@ -16,8 +14,6 @@ nav_order: 3
   {% endfor %}
 </div>
 {% endif %}
-
-## GitHub Repositories
 
 {% if site.data.repositories.github_repos %}
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
