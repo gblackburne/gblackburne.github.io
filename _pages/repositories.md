@@ -15,9 +15,6 @@ nav_order: 3
     {% include repository/repo_user.html username=user %}
   {% endfor %}
 </div>
-
-{% endfor %}
-{% endif %}
 {% endif %}
 
 ## GitHub Repositories
