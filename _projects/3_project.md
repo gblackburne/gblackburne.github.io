@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Information Dynamics
-description: The mechanics and behaviour of information.
+description: Understanding information itself.
 img: assets/img/infodyn.jpg
 # redirect: https://unsplash.com
 importance: 3
