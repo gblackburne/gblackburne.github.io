@@ -1,17 +1,4 @@
-<div class="publications">
-  <div class="publication-item">
-    <span class="authors">
-      <strong>Blackburne, George</strong>, McAlpine, Rosalind G, Fabus, Marco, Liardi, Alberto, Kamboj, Sunjeev K, Mediano, Pedro A M, and Skipper, Jeremy I
-    </span>
-    <span class="title">
-      "Complex slow waves in the human brain under 5-MeO-DMT"
-    </span>
-    <span class="venue">
-      <em>Cell Reports</em>, vol. 44, no. 8, pp. 116040, Aug. 2025
-    </span>
-    <div class="publication-links">
-      <a href="https://doi.org/10.1016/j.celrep.2025.116040" target="_blank">DOI</a>
-      <a href="https://pubmed.ncbi.nlm.nih.gov/40700019" target="_blank">PubMed</a>
-    </div>
-  </div>
-</div>
+
+          <div class="publications">
+            {% bibliography -f papers -q @*[selected=true]* %}
+          </div>
