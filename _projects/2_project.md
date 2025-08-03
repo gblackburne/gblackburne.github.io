@@ -2,7 +2,8 @@
 layout: page
 title: Emergence
 description: Towards a mereology of the brain (and beyond).
-img: assets/img/emergences.jpg
+img: assets/img/emergence.jpg
 importance: 2
 category: work
+clickable: false
 ---
