@@ -498,6 +498,10 @@ footer.sticky-bottom {
     img {
       width: 100%;
     }
+
+    .card-body {
+      padding: .75rem; // Increase padding around text in project cards
+    }
   }
 
   .card-item {
@@ -512,7 +516,7 @@ footer.sticky-bottom {
 
   .grid-sizer,
   .grid-item {
-    width: 230px;
+    width: 240px;
     margin-bottom: 10px;
   }
 
