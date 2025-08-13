@@ -100,6 +100,11 @@ body.sticky-bottom-footer {
 /*******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
+:root {
+  --global-theme-color: #4a148c !important;
+  --global-hover-color: #6a1b9a !important;
+}
+
 p,
 h1,
 h2,
