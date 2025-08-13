@@ -2,6 +2,12 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+// Deep purple theme override
+:root {
+  --global-theme-color: #4a148c !important;
+  --global-hover-color: #6a1b9a !important;
+}
+
 // Typography
 
 p,
