@@ -138,7 +138,7 @@ table.table a {
 }
 a:hover,
 table.table a:hover {
-  color: var(--global-theme-color);
+  color: #4a148c !important;
   text-decoration: underline;
 }
 a:hover:after :not(.nav-item.dropdown),
@@ -231,7 +231,7 @@ blockquote {
   color: inherit;
 }
 .post-description a:hover {
-  color: var(--global-theme-color);
+  color: #4a148c !important;
   text-decoration: none;
 }
 
@@ -250,7 +250,7 @@ blockquote {
   color: var(--global-text-color);
 }
 .navbar .dropdown-menu a:hover {
-  color: var(--global-hover-color);
+  color: #4a148c !important;
 }
 .navbar .dropdown-menu .dropdown-divider {
   border-top: 1px solid var(--global-divider-color) !important;
@@ -274,7 +274,7 @@ blockquote {
   color: var(--global-text-color);
 }
 .navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
-  color: var(--global-hover-color);
+  color: #4a148c !important;
 }
 .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
   background-color: inherit;
@@ -455,7 +455,7 @@ footer.sticky-bottom {
   text-decoration: none;
 }
 .post-list li a:hover {
-  color: var(--global-theme-color);
+  color: #4a148c !important;
 }
 
 .pagination .page-item .page-link {
@@ -701,7 +701,7 @@ html.transition *:after {
   text-decoration: none;
 }
 .post .post-tags a:hover {
-  color: var(--global-theme-color);
+  color: #4a148c !important;
 }
 .post .post-content blockquote {
   border-left: 5px solid var(--global-theme-color);
@@ -752,7 +752,7 @@ progress::-moz-progress-bar {
 }
 
 .progress-bar {
-  background-color: var(--global-theme-color);
+  background-color: #4a148c !important;
   width: 0%;
   display: block;
   height: inherit;
@@ -782,6 +782,33 @@ pre .copy:active, pre .copy:focus, pre .copy:hover {
 pre:active .copy, pre:focus .copy, pre:hover .copy {
   color: var(--global-hover-color);
   opacity: 1;
+}
+
+:root {
+  --global-theme-color: #4a148c !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #4a148c !important;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .show > .nav-link {
+  color: #4a148c !important;
+}
+
+.progress-bar {
+  background-color: #4a148c !important;
+}
+
+a:hover {
+  color: #4a148c !important;
+}
+
+* {
+  --global-theme-color: #4a148c !important;
+  --global-hover-color: #4a148c !important;
 }
 
 /*******************************************************************************
