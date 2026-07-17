@@ -537,6 +537,20 @@ footer.sticky-bottom {
 }
 
 
+// Updates / news feed
+
+.news {
+  .table-responsive {
+    overflow-x: hidden;
+  }
+
+  .publications .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+
 // Publications
 
 .publications {
