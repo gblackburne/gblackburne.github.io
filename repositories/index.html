@@ -115,55 +115,118 @@
           </header>
 
           <article>
-            
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+            <style>
+  .repositories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+  .repo-card {
+    display: block;
+    flex: 1 1 260px;
+    max-width: 360px;
+    padding: 1rem 1.2rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    background-color: var(--global-card-bg-color);
+    color: var(--global-text-color) !important;
+    text-decoration: none !important;
+    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .repo-card:hover {
+    border-color: var(--global-theme-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  }
+  .repo-card-title {
+    font-weight: 600;
+    color: var(--global-theme-color);
+    margin-bottom: 0.4rem;
+    word-break: break-word;
+  }
+  .repo-card-title i {
+    margin-right: 0.4rem;
+  }
+  .repo-card-owner {
+    color: var(--global-text-color-light);
+    font-weight: 400;
+  }
+  .repo-card-desc {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+  }
+  .repo-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: var(--global-text-color-light);
+  }
+  .repo-lang-dot {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin-right: 0.35rem;
+    vertical-align: -1px;
+  }
+  .repo-stat i {
+    margin-right: 0.3rem;
+  }
+</style>
+
+<div class="repositories">
   
-    
-
-
-
-<div class="repo p-2 text-center">
-  <a href="https://github.com/gblackburne/cortexcanvas" rel="external nofollow noopener" target="_blank">
-    <img class="repo-img-light w-100" alt="gblackburne/cortexcanvas" src="https://github-readme-stats.vercel.app/api/pin/?username=gblackburne&amp;repo=cortexcanvas&amp;theme=default&amp;show_owner=true">
-    <img class="repo-img-dark w-100" alt="gblackburne/cortexcanvas" src="https://github-readme-stats.vercel.app/api/pin/?username=gblackburne&amp;repo=cortexcanvas&amp;theme=dark&amp;show_owner=true">
-  </a>
-</div>
-
-  
-    
-
-
-
-<div class="repo p-2 text-center">
-  <a href="https://github.com/gblackburne/Pyfurcate" rel="external nofollow noopener" target="_blank">
-    <img class="repo-img-light w-100" alt="gblackburne/Pyfurcate" src="https://github-readme-stats.vercel.app/api/pin/?username=gblackburne&amp;repo=Pyfurcate&amp;theme=default&amp;show_owner=true">
-    <img class="repo-img-dark w-100" alt="gblackburne/Pyfurcate" src="https://github-readme-stats.vercel.app/api/pin/?username=gblackburne&amp;repo=Pyfurcate&amp;theme=dark&amp;show_owner=true">
-  </a>
-</div>
+    <a class="repo-card" href="https://github.com/gblackburne/cortexcanvas" rel="external nofollow noopener" target="_blank">
+  <div class="repo-card-title">
+    <i class="fab fa-github"></i>
+    <span class="repo-card-owner">gblackburne/</span>cortexcanvas
+  </div>
+  <div class="repo-card-desc">Frankensteinian brain plotting in Python</div>
+  <div class="repo-card-meta">
+    <span class="repo-lang"><span class="repo-lang-dot" style="background-color: #DA5B0B;"></span>Jupyter Notebook</span>
+  </div>
+</a>
 
   
-    
-
-
-
-<div class="repo p-2 text-center">
-  <a href="https://github.com/gblackburne/eemergence" rel="external nofollow noopener" target="_blank">
-    <img class="repo-img-light w-100" alt="gblackburne/eemergence" src="https://github-readme-stats.vercel.app/api/pin/?username=gblackburne&amp;repo=eemergence&amp;theme=default&amp;show_owner=true">
-    <img class="repo-img-dark w-100" alt="gblackburne/eemergence" src="https://github-readme-stats.vercel.app/api/pin/?username=gblackburne&amp;repo=eemergence&amp;theme=dark&amp;show_owner=true">
-  </a>
-</div>
+    <a class="repo-card" href="https://github.com/gblackburne/Pyfurcate" rel="external nofollow noopener" target="_blank">
+  <div class="repo-card-title">
+    <i class="fab fa-github"></i>
+    <span class="repo-card-owner">gblackburne/</span>Pyfurcate
+  </div>
+  <div class="repo-card-desc">Whole-brain modelling with Hopf bifurcations in PyTorch</div>
+  <div class="repo-card-meta">
+    <span class="repo-lang"><span class="repo-lang-dot" style="background-color: #DA5B0B;"></span>Jupyter Notebook</span>
+    <span class="repo-stat"><i class="fas fa-code-branch"></i>1</span>
+  </div>
+</a>
 
   
-    
+    <a class="repo-card" href="https://github.com/gblackburne/eemergence" rel="external nofollow noopener" target="_blank">
+  <div class="repo-card-title">
+    <i class="fab fa-github"></i>
+    <span class="repo-card-owner">gblackburne/</span>eemergence
+  </div>
+  <div class="repo-card-desc">Tools for a computational mechanics of emergence</div>
+  <div class="repo-card-meta">
+    <span class="repo-lang"><span class="repo-lang-dot" style="background-color: #DA5B0B;"></span>Jupyter Notebook</span>
+  </div>
+</a>
 
-
-
-<div class="repo p-2 text-center">
-  <a href="https://github.com/gblackburne/complex-slow-waves" rel="external nofollow noopener" target="_blank">
-    <img class="repo-img-light w-100" alt="gblackburne/complex-slow-waves" src="https://github-readme-stats.vercel.app/api/pin/?username=gblackburne&amp;repo=complex-slow-waves&amp;theme=default&amp;show_owner=true">
-    <img class="repo-img-dark w-100" alt="gblackburne/complex-slow-waves" src="https://github-readme-stats.vercel.app/api/pin/?username=gblackburne&amp;repo=complex-slow-waves&amp;theme=dark&amp;show_owner=true">
-  </a>
-</div>
+  
+    <a class="repo-card" href="https://github.com/gblackburne/complex-slow-waves" rel="external nofollow noopener" target="_blank">
+  <div class="repo-card-title">
+    <i class="fab fa-github"></i>
+    <span class="repo-card-owner">gblackburne/</span>complex-slow-waves
+  </div>
+  <div class="repo-card-desc">Complex slow waves in the human brain under 5-MeO-DMT</div>
+  <div class="repo-card-meta">
+    <span class="repo-lang"><span class="repo-lang-dot" style="background-color: #3572A5;"></span>Python</span>
+    <span class="repo-stat"><i class="fas fa-star"></i>2</span>
+  </div>
+</a>
 
   
 </div>
