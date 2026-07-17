@@ -1,7 +1,26 @@
 # github_users:
 #   - gblackburne
 
+# Repositories shown on the /repositories/ page, rendered as self-contained
+# cards (the public github-readme-stats service is unreliable).
 github_repos:
-  - gblackburne/e-Emergence
-  - gblackburne/complex-slow-waves
-  - gblackburne/Pyfurcate
+  - name: cortexcanvas
+    owner: gblackburne
+    description: Frankensteinian brain plotting in Python
+    language: Jupyter Notebook
+    language_color: "#DA5B0B"
+  - name: Pyfurcate
+    owner: gblackburne
+    description: Whole-brain modelling with Hopf bifurcations in PyTorch
+    language: Jupyter Notebook
+    language_color: "#DA5B0B"
+  - name: eemergence
+    owner: gblackburne
+    description: Tools for a computational mechanics of emergence
+    language: Jupyter Notebook
+    language_color: "#DA5B0B"
+  - name: complex-slow-waves
+    owner: gblackburne
+    description: Complex slow waves in the human brain under 5-MeO-DMT
+    language: Python
+    language_color: "#3572A5"

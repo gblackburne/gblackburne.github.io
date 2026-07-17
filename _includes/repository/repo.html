@@ -1,14 +1,15 @@
-{% assign repo_url =  include.repository | split: '/' %}
-
-{% if site.data.repositories.github_users contains repo_url.first %}
-  {% assign show_owner = false %}
-{% else %}
-  {% assign show_owner = true %}
-{% endif %}
-
-<div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.repository }}">
-    <img class="repo-img-light w-100" alt="{{ include.repository }}" src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&show_owner={{ show_owner }}">
-    <img class="repo-img-dark w-100" alt="{{ include.repository }}" src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&show_owner={{ show_owner }}">
-  </a>
-</div>
+{%- assign repo = include.repository -%}
+<a class="repo-card" href="https://github.com/{{ repo.owner }}/{{ repo.name }}">
+  <div class="repo-card-title">
+    <i class="fab fa-github"></i>
+    <span class="repo-card-owner">{{ repo.owner }}/</span>{{ repo.name }}
+  </div>
+  {%- if repo.description %}
+  <div class="repo-card-desc">{{ repo.description }}</div>
+  {%- endif %}
+  {%- if repo.language %}
+  <div class="repo-card-meta">
+    <span class="repo-lang"><span class="repo-lang-dot" style="background-color: {{ repo.language_color | default: '#858585' }};"></span>{{ repo.language }}</span>
+  </div>
+  {%- endif %}
+</a>

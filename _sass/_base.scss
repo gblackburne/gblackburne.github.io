@@ -4,8 +4,8 @@
 
 // Yellowy orange theme override
 :root {
-  --global-theme-color: #ff9500 !important;
-  --global-hover-color: #ff9500 !important;
+  --global-theme-color: #c43187 !important;
+  --global-hover-color: #c43187 !important;
 }
 
 // Typography
@@ -46,7 +46,7 @@ table.table a {
   color: var(--global-theme-color);
 
   &:hover {
-    color: #4a148c !important;
+    color: #c43187 !important;
     text-decoration: underline;
   }
 
@@ -160,7 +160,7 @@ blockquote {
     color: inherit;
 
     &:hover {
-      color: #4a148c !important;
+      color: #c43187 !important;
       text-decoration: none;
     }
   }
@@ -185,7 +185,7 @@ blockquote {
   }
 
   a:hover {
-    color: #4a148c !important;
+    color: #c43187 !important;
   }
 
   .dropdown-divider {
@@ -217,7 +217,7 @@ blockquote {
     color: var(--global-text-color);
 
     &:hover {
-      color: #4a148c !important;
+      color: #c43187 !important;
     }
   }
 
@@ -449,7 +449,7 @@ footer.sticky-bottom {
       text-decoration: none;
 
       &:hover {
-        color: #4a148c !important;
+        color: #c43187 !important;
       }
     }
   }
@@ -768,7 +768,7 @@ html.transition *:after {
       text-decoration: none;
 
       &:hover {
-        color: #4a148c !important;
+        color: #c43187 !important;
       }
     }
   }
@@ -830,7 +830,7 @@ progress::-moz-progress-bar {
 }
 
 .progress-bar {
-  background-color: #4a148c !important;
+  background-color: #c43187 !important;
   width: 0%;
   display: block;
   height: inherit;
@@ -871,32 +871,32 @@ pre {
 
 // Deep purple overrides for specific elements
 :root {
-  --global-theme-color: #4a148c !important;
+  --global-theme-color: #c43187 !important;
 }
 
 // Navigation hover states
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
-  color: #4a148c !important;
+  color: #c43187 !important;
 }
 
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .show > .nav-link {
-  color: #4a148c !important;
+  color: #c43187 !important;
 }
 
 // Progress bar
 .progress-bar {
-  background-color: #4a148c !important;
+  background-color: #c43187 !important;
 }
 
 // Links
 a:hover {
-  color: #4a148c !important;
+  color: #c43187 !important;
 }
 
 // Any other theme color usage
 * {
-  --global-theme-color: #4a148c !important;
-  --global-hover-color: #4a148c !important;
+  --global-theme-color: #c43187 !important;
+  --global-hover-color: #c43187 !important;
 }

@@ -29,7 +29,16 @@
         <!-- Entry bib key -->
         <div id="{{entry.key}}" class="col-sm-8">
         <!-- Title -->
-        <div class="title">{{entry.title}}</div>
+        {%- if entry.doi -%}
+          {%- capture cite_url -%}https://doi.org/{{ entry.doi }}{%- endcapture -%}
+        {%- elsif entry.url -%}
+          {%- assign cite_url = entry.url -%}
+        {%- elsif entry.html -%}
+          {%- assign cite_url = entry.html -%}
+        {%- else -%}
+          {%- assign cite_url = nil -%}
+        {%- endif -%}
+        <div class="title">{%- if cite_url -%}<a href="{{ cite_url }}" target="_blank" rel="noopener noreferrer" style="color: inherit;">{{ entry.title }}</a>{%- else -%}{{ entry.title }}{%- endif -%}</div>
         <!-- Author -->
         <div class="author">
         {% assign author_array_size = entry.author_array | size %}
