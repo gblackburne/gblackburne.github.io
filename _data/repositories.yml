@@ -24,3 +24,8 @@ github_repos:
     description: Complex slow waves in the human brain under 5-MeO-DMT
     language: Python
     language_color: "#3572A5"
+  - name: wimfo
+    owner: alberto-liardi
+    description: Package to calculate W-, M-information, and Broja-PhiID
+    language: Python
+    language_color: "#3572A5"
