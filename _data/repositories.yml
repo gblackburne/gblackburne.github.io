@@ -1,6 +1,3 @@
-# github_users:
-#   - gblackburne
-
 # Repositories shown on the /repositories/ page, rendered as self-contained
 # cards (the public github-readme-stats service is unreliable).
 github_repos:
