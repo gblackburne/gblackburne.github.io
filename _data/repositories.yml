@@ -1,4 +1,4 @@
-# Repositories shown on the /repositories/ page, rendered as self-contained
+# Repositories shown on the /software/ page, rendered as self-contained
 # cards (the public github-readme-stats service is unreliable).
 github_repos:
   - name: cortexcanvas
