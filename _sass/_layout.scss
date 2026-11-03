@@ -71,6 +71,14 @@ body.home .container {
       padding-right: 0.8rem;
     }
   }
+
+  // bib.html only uses 10 of the 12 grid columns, so let the text take the rest and reach the right edge
+  @media (min-width: 576px) {
+    .publications .row > .col-sm-8 {
+      flex: 1 0 0;
+      max-width: none;
+    }
+  }
 }
 
 @media (max-width: 991px) {
