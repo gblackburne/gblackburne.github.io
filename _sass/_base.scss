@@ -598,6 +598,12 @@ footer.sticky-bottom {
             border-bottom: 1px dashed var(--global-text-color);
           }
         }
+
+        >span.author-note {
+          color: var(--global-text-color-light);
+          font-size: 0.85em;
+          margin-left: 0.3em;
+        }
       }
 
       .links {

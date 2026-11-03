@@ -112,6 +112,9 @@
               "
           >{{more_authors_hide}}</span>
         {%- endif -%}
+        {%- if entry.author_note -%}
+          <span class="author-note">({{ entry.author_note }})</span>
+        {%- endif -%}
 
         </div>
 
