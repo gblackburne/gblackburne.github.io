@@ -33,11 +33,7 @@ body.sticky-bottom-footer {
   }
 }
 
-// Home page: wider, with selected works and news side by side
-body.home .container {
-  max-width: 1140px;
-}
-
+// Home page: selected works and news side by side
 @media (min-width: 576px) {
   // fit_profile.js resizes this, the width here just avoids a big flash before it runs
   body.home .profile {
@@ -74,6 +70,12 @@ body.home .container {
 
   // bib.html only uses 10 of the 12 grid columns, so let the text take the rest and reach the right edge
   @media (min-width: 576px) {
+    // fixed preview column (80px image plus the usual padding) so narrow columns dont push the image into the text
+    .publications .row > .col-sm-2 {
+      flex: 0 0 110px;
+      max-width: 110px;
+    }
+
     .publications .row > .col-sm-8 {
       flex: 1 0 0;
       max-width: none;
