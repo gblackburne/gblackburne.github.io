@@ -33,6 +33,53 @@ body.sticky-bottom-footer {
   }
 }
 
+// Home page: wider, with selected works and news side by side
+body.home .container {
+  max-width: 1140px;
+}
+
+@media (min-width: 576px) {
+  // fit_profile.js resizes this, the width here just avoids a big flash before it runs
+  body.home .profile {
+    width: 145px;
+  }
+
+  // keep the bio in its own column so it never runs underneath the picture
+  body.home article > .clearfix {
+    display: flow-root;
+  }
+}
+
+.home-cols {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 3rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+
+  .home-col-main {
+    flex: 3 1 0;
+    min-width: 0;
+  }
+
+  .home-col-side {
+    flex: 2 1 0;
+    min-width: 0;
+
+    .news th {
+      white-space: nowrap;
+      padding-right: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .home-cols {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
 // TODO: redefine content layout.
 
 

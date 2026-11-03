@@ -40,17 +40,23 @@ layout: default
             {{ content }}
           </div>
 
-          <!-- News -->
-          {% if page.news -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">updates</a></h2>
-            {%- include news.html %}
+          <!-- Selected papers first in the markup so they come before news when the columns stack -->
+          <div class="home-cols">
+          {% if page.selected_papers -%}
+            <div class="home-col-main">
+              <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected works</a></h2>
+              {%- include selected_papers.html %}
+            </div>
           {%- endif %}
 
-          <!-- Selected papers -->
-          {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected works</a></h2>
-            {%- include selected_papers.html %}
+          <!-- News -->
+          {% if page.news -%}
+            <div class="home-col-side">
+              <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">updates</a></h2>
+              {%- include news.html %}
+            </div>
           {%- endif %}
+          </div>
 
           <!-- Social -->
           {%- if page.social %}
@@ -68,3 +74,5 @@ layout: default
         </article>
 
 </div>
+
+<script defer src="{{ '/assets/js/fit_profile.js' | relative_url }}"></script>
