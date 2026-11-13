@@ -70,10 +70,22 @@ body.sticky-bottom-footer {
 
   // bib.html only uses 10 of the 12 grid columns, so let the text take the rest and reach the right edge
   @media (min-width: 576px) {
-    // fixed preview column (80px image plus the usual padding) so narrow columns dont push the image into the text
+    // fixed preview column (image plus the usual 30px padding) so narrow columns dont push the image into the text
     .publications .row > .col-sm-2 {
       flex: 0 0 110px;
       max-width: 110px;
+    }
+
+    // selected works get a 120px image
+    .home-col-main .publications .row > .col-sm-2 {
+      flex: 0 0 150px;
+      max-width: 150px;
+    }
+
+    // updates get 92px, the largest size where the author name stil fits on one line at desktop widths
+    .home-col-side .publications .row > .col-sm-2 {
+      flex: 0 0 122px;
+      max-width: 122px;
     }
 
     .publications .row > .col-sm-8 {
