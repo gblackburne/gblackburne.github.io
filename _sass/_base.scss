@@ -457,6 +457,11 @@ footer.sticky-bottom {
     .card-body {
       padding: .75rem; // Increase padding around text in project cards
     }
+
+    // small enough that the longest title word (neurotransmission) fits on one line in a 240px card
+    .card-title {
+      font-size: 1.5rem;
+    }
   }
 
   .card-item {
