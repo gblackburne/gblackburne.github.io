@@ -464,8 +464,15 @@ footer.sticky-bottom {
     .card-body {
       padding: .75rem; // Increase padding around text in project cards
 
+      // match the about page: light weight titles, body text in the normal text colour and size
+      .card-title {
+        font-weight: 300;
+      }
+
       .card-text {
-        font-size: 1.05rem;
+        font-size: 1rem;
+        font-weight: 300;
+        color: var(--global-text-color);
         margin-bottom: 0;
       }
     }

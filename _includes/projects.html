@@ -6,6 +6,7 @@
       {%- if project.img %}
       {%- include figure.html
         path=project.img
+        position=project.img_pos
         alt="project thumbnail" -%}
       {%- endif %}
       <div class="card-body">
@@ -38,6 +39,7 @@
           {%- if project.img %}
           {%- include figure.html
             path=project.img
+            position=project.img_pos
             alt="project thumbnail" -%}
           {%- endif %}
           <div class="card-body">
