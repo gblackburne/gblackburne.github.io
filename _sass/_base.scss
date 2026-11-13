@@ -450,13 +450,26 @@ footer.sticky-bottom {
   }
 
   .card {
+    figure {
+      margin-bottom: 0;
+    }
+
+    // show the paintings a bit wider than 3:2 so both rows fit on a laptop screen
     img {
       width: 100%;
+      aspect-ratio: 2 / 1;
+      object-fit: cover;
     }
 
     .card-body {
       padding: .75rem; // Increase padding around text in project cards
-    }  }
+
+      .card-text {
+        font-size: 1.05rem;
+        margin-bottom: 0;
+      }
+    }
+  }
 
   .card-item {
     width: auto;
