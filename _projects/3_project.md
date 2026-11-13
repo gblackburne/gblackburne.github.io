@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Information Dynamics
-description: Understanding information itself.
-img: assets/img/infodyn.jpg
-# redirect: https://unsplash.com
+title: Emergence
+description: Understanding how novel macroscopic properties and processes occur.
+img: assets/img/emergence.jpg
 importance: 3
 category: work
 clickable: false

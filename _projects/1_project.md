@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Consciousness
-description: The neuroscience of the structure of subjective experience.
-img: assets/img/conscious.jpg
+title: Brain Organisation
+description: Mapping the multiscale functional architecture of brains across phylogeny.
+img: assets/img/brainorg.jpg
 importance: 1
 category: work
 clickable: false

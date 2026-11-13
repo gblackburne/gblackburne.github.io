@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Emergence
-description: Towards a mereology of the brain (and beyond).
-img: assets/img/emergence.jpg
+title: Information Dynamics
+description: Formalising computation in complex systems.
+img: assets/img/infodyn.jpg
 importance: 2
 category: work
 clickable: false
