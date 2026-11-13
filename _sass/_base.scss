@@ -456,13 +456,7 @@ footer.sticky-bottom {
 
     .card-body {
       padding: .75rem; // Increase padding around text in project cards
-    }
-
-    // small enough that the longest title word (neurotransmission) fits on one line in a 240px card
-    .card-title {
-      font-size: 1.5rem;
-    }
-  }
+    }  }
 
   .card-item {
     width: auto;
@@ -474,10 +468,20 @@ footer.sticky-bottom {
     }
   }
 
+  // cards are wide enough that long titles (neurotransmission) never split mid word:
+  // three across on desktop, two on tablets, one on phones
   .grid-sizer,
   .grid-item {
-    width: 240px;
+    width: 100%;
     margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+      width: calc((100% - 10px) / 2);
+    }
+
+    @media (min-width: 992px) {
+      width: calc((100% - 20px) / 3);
+    }
   }
 
   h2.category {
